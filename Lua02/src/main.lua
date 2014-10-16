@@ -48,6 +48,11 @@ Man.sayHi = function(self)
     print("man say hi::"..self.name)
 end
 
+Man.sayHello = function (self)
+
+  print("man say hello :" .. self.name)
+end
+
 local m = Man.new("lisi")
 m:sayHi()
 m:sayHello();
