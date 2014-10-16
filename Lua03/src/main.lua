@@ -1,4 +1,5 @@
 
+--±Õ°ü£¬¼Ì³Ð
 
 function People( name)
 	local self  = {};
