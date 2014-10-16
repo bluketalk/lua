@@ -33,4 +33,22 @@ p:sayHello();
 
 --//ผฬณะ
 
+Man = {}
+Man.new = function (name)
+  local self = {}
+  
+  self = People.new(name)
+  for key, var in pairs(Man) do
+    self[key] = var
+  end
+  return self
+end
+
+Man.sayHi = function(self)
+    print("man say hi::"..self.name)
+end
+
+local m = Man.new("lisi")
+m:sayHi()
+m:sayHello();
 
